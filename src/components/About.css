@@ -1,0 +1,193 @@
+.about-page {
+  background: #ffffff;
+}
+
+/* HERO */
+.about-hero {
+  position: relative;
+  background: linear-gradient(135deg, #021a3a 0%, #063970 100%);
+  padding: 120px 24px 80px;
+  text-align: center;
+  overflow: hidden;
+}
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(59,130,246,0.15), transparent 70%);
+  pointer-events: none;
+}
+.about-hero-content {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.about-badge {
+  display: inline-block;
+  color: #60a5fa;
+  font-weight: 800;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  background: rgba(96,165,250,0.1);
+  padding: 8px 16px;
+  border-radius: 30px;
+}
+.about-h1 {
+  font-size: 56px;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+.about-h1 span {
+  color: #93c5fd;
+}
+.about-hero-p {
+  color: #bfdbfe;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* IDENTITY SECTION */
+.about-identity {
+  padding: 100px 24px;
+  background: #fff;
+}
+.about-identity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about-features {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.about-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--gray-50);
+  padding: 24px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+}
+.about-feature-icon {
+  color: var(--blue-mid);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.about-feature h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.about-feature p {
+  color: var(--gray-500);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about-identity-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.about-visual-card {
+  background: var(--gray-50);
+  padding: 40px 24px;
+  border-radius: 24px;
+  text-align: center;
+  border: 1px solid var(--gray-100);
+  transition: transform 0.3s ease;
+}
+.about-visual-card.highlight {
+  background: linear-gradient(135deg, var(--blue-mid), var(--blue-light));
+  color: #fff;
+  border: none;
+  transform: translateY(30px);
+}
+.about-visual-card:hover {
+  transform: translateY(-8px);
+}
+.about-visual-card.highlight:hover {
+  transform: translateY(22px);
+}
+.about-visual-card h3 {
+  font-size: 42px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.about-visual-card p {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* FOCUS SECTION */
+.about-focus {
+  padding: 100px 24px;
+  background: var(--gray-50);
+}
+.about-focus-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.about-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+.about-focus-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 32px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+.about-focus-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+.about-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.about-icon-wrapper.blue { background: #eff6ff; color: #3b82f6; }
+.about-icon-wrapper.purple { background: #faf5ff; color: #a855f7; }
+.about-icon-wrapper.teal { background: #f0fdfa; color: #14b8a6; }
+
+.about-focus-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--gray-900);
+}
+.about-focus-card p {
+  color: var(--gray-500);
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .about-h1 { font-size: 40px; }
+  .about-identity-grid { grid-template-columns: 1fr; gap: 60px; }
+  .about-visual-card.highlight { transform: translateY(0); }
+  .about-visual-card.highlight:hover { transform: translateY(-8px); }
+}
