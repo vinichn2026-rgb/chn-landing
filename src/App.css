@@ -253,22 +253,74 @@ footer{background:var(--gray-900);color:#fff;padding:60px 24px 30px}
 /* ── LOGO SVG ── */
 .chn-logo-svg{display:block}
 
+/* ── NAV EXTRAS ── */
+.nav-mobile-toggle {
+  display: none;
+  cursor: pointer;
+  color: var(--blue-dark);
+}
+.nav-mobile-dropdown {
+  display: none;
+}
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr}
+  .hero-inner{grid-template-columns:1fr; gap: 40px}
   .hero h1{font-size:36px}
-  .why-inner{grid-template-columns:1fr}
+  .why-inner{grid-template-columns:1fr; gap: 40px}
   .steps{grid-template-columns:1fr 1fr;gap:32px}
   .steps::before{display:none}
   .footer-grid{grid-template-columns:1fr 1fr}
   .seo-cols{grid-template-columns:1fr}
+  
+  /* Make all generic 1fr 1fr inline grids responsive */
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  div[style*="gridTemplateColumns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  
+  /* Mobile Nav */
+  .nav-links { display: none; }
+  .nav-mobile-toggle { display: block; }
+  .nav-mobile-dropdown {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-top: 1px solid var(--gray-100);
+    padding: 20px 24px;
+    gap: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  .nav-mobile-dropdown a {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--gray-700);
+    padding: 8px 0;
+    text-decoration: none;
+  }
+  .nav-cta-mobile {
+    background: var(--blue-dark);
+    color: #fff !important;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 700;
+  }
 }
+
 @media(max-width:600px){
-  .hero h1{font-size:28px}
+  section { padding: 50px 20px; }
+  .hero { padding: 50px 20px; }
+  .hero h1{font-size:30px}
   .section-title{font-size:26px}
   .hero-stats{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr}
   .pillar-grid{grid-template-columns:1fr}
-  .nav-links{display:none}
 }
+
