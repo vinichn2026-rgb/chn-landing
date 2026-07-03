@@ -320,7 +320,16 @@ footer{background:var(--gray-900);color:#fff;padding:60px 24px 30px}
   .section-title{font-size:26px}
   .hero-stats{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr}
+  .footer-grid{
+    grid-template-columns:1fr;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+  }
   .pillar-grid{grid-template-columns:1fr}
 }
 
