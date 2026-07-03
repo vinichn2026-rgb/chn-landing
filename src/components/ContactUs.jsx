@@ -92,7 +92,7 @@ export default function ContactUs() {
                       onChange={handleChange}
                       required
                       style={{ width: '100%', padding: '12px', border: '1px solid var(--gray-300)', borderRadius: '6px', fontSize: '14px', outline: 'none' }}
-                      placeholder="John Doe"
+                      placeholder="e.g., Arun Kumar"
                     />
                   </div>
                   <div>
@@ -104,7 +104,7 @@ export default function ContactUs() {
                       onChange={handleChange}
                       required
                       style={{ width: '100%', padding: '12px', border: '1px solid var(--gray-300)', borderRadius: '6px', fontSize: '14px', outline: 'none' }}
-                      placeholder="john@example.com"
+                      placeholder="e.g., arun.kumar@company.com"
                     />
                   </div>
                 </div>
@@ -203,8 +203,8 @@ export default function ContactUs() {
 
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
                   <span style={{ fontSize: '18px' }}>✉️</span>
-                  <a href="mailto:vinichn2026@gmail.com" style={{ fontSize: '15px', color: 'var(--blue-mid)', margin: 0, textDecoration: 'none' }}>
-                    vinichn2026@gmail.com
+                  <a href="mailto:info@chnindia.com" style={{ fontSize: '15px', color: 'var(--blue-mid)', margin: 0, textDecoration: 'none' }}>
+                    info@chnindia.com
                   </a>
                 </div>
               </div>
@@ -233,8 +233,8 @@ export default function ContactUs() {
 
                 <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
                   <span style={{ fontSize: '18px' }}>✉️</span>
-                  <a href="mailto:vinichn2026@gmail.com" style={{ fontSize: '15px', color: 'var(--blue-mid)', margin: 0, textDecoration: 'none' }}>
-                    vinichn2026@gmail.com
+                  <a href="mailto:info@chnindia.com" style={{ fontSize: '15px', color: 'var(--blue-mid)', margin: 0, textDecoration: 'none' }}>
+                    info@chnindia.com
                   </a>
                 </div>
               </div>
