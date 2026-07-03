@@ -40,6 +40,7 @@ export default function Footer() {
           <p>© 2026 CHN Technologies. All rights reserved.</p>
           <p>Privacy Policy · Terms of Use</p>
         </div>
+        {/* Updated footer content to trigger new commit */}
       </div>
     </footer>
   );
