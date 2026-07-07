@@ -1,3 +1,5 @@
+import { MdTrackChanges, MdAutoAwesome, MdHandshake } from 'react-icons/md';
+
 export default function SEO() {
   return (
     <section className="seo-block" aria-label="About CHN workforce solutions">
@@ -57,18 +59,18 @@ export default function SEO() {
 
         {/* Core Values Section */}
         <div style={{ marginTop: '60px', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }}>
-          <div style={{ background: '#fff', padding: '30px', borderRadius: '12px', border: '1px solid var(--gray-100)', textAlign: 'center' }}>
-            <div style={{ fontSize: '40px', marginBottom: '16px' }}>🎯</div>
+          <div style={{ background: '#fff', padding: '30px', borderRadius: '12px', border: '1px solid var(--gray-100)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ fontSize: '40px', marginBottom: '16px', color: '#1a6fd4' }}><MdTrackChanges /></div>
             <h4 style={{ fontSize: '18px', fontWeight: '700', color: 'var(--gray-900)', marginBottom: '10px' }}>Our Mission</h4>
             <p style={{ fontSize: '14px', color: 'var(--gray-500)', lineHeight: '1.6' }}>To empower businesses with access to skilled talent and streamlined workforce operations across India.</p>
           </div>
-          <div style={{ background: '#fff', padding: '30px', borderRadius: '12px', border: '1px solid var(--gray-100)', textAlign: 'center' }}>
-            <div style={{ fontSize: '40px', marginBottom: '16px' }}>✨</div>
+          <div style={{ background: '#fff', padding: '30px', borderRadius: '12px', border: '1px solid var(--gray-100)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ fontSize: '40px', marginBottom: '16px', color: '#1a6fd4' }}><MdAutoAwesome /></div>
             <h4 style={{ fontSize: '18px', fontWeight: '700', color: 'var(--gray-900)', marginBottom: '10px' }}>Our Vision</h4>
             <p style={{ fontSize: '14px', color: 'var(--gray-500)', lineHeight: '1.6' }}>To be India's most trusted and innovative workforce solutions partner for sustainable business growth.</p>
           </div>
-          <div style={{ background: '#fff', padding: '30px', borderRadius: '12px', border: '1px solid var(--gray-100)', textAlign: 'center' }}>
-            <div style={{ fontSize: '40px', marginBottom: '16px' }}>🤝</div>
+          <div style={{ background: '#fff', padding: '30px', borderRadius: '12px', border: '1px solid var(--gray-100)', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            <div style={{ fontSize: '40px', marginBottom: '16px', color: '#1a6fd4' }}><MdHandshake /></div>
             <h4 style={{ fontSize: '18px', fontWeight: '700', color: 'var(--gray-900)', marginBottom: '10px' }}>Our Values</h4>
             <p style={{ fontSize: '14px', color: 'var(--gray-500)', lineHeight: '1.6' }}>Integrity, Excellence, Innovation, and Compliance in every aspect of our service delivery.</p>
           </div>

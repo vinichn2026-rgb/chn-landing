@@ -182,7 +182,7 @@ export default function ContactUs() {
               {/* Chennai Office */}
               <div style={{ background: '#fff', padding: '30px', borderRadius: '12px', marginBottom: '24px', borderLeft: '4px solid var(--blue-mid)', boxShadow: '0 4px 15px rgba(0,0,0,0.03)' }}>
                 <h3 style={{ fontSize: '20px', fontWeight: '700', marginBottom: '16px', color: 'var(--blue-dark)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  🏢 Chennai (Head Office)
+                  🏢 Chennai
                 </h3>
                 
                 <div style={{ display: 'flex', gap: '12px', marginBottom: '12px', alignItems: 'flex-start' }}>
@@ -197,7 +197,7 @@ export default function ContactUs() {
                 <div style={{ display: 'flex', gap: '12px', marginBottom: '12px', alignItems: 'center' }}>
                   <span style={{ fontSize: '18px' }}>📞</span>
                   <p style={{ fontSize: '15px', color: 'var(--gray-700)', margin: 0 }}>
-                    +91 93612 30063 / +91 63641 00829
+                    +91-7010203031
                   </p>
                 </div>
 
@@ -227,7 +227,7 @@ export default function ContactUs() {
                 <div style={{ display: 'flex', gap: '12px', marginBottom: '12px', alignItems: 'center' }}>
                   <span style={{ fontSize: '18px' }}>📞</span>
                   <p style={{ fontSize: '15px', color: 'var(--gray-700)', margin: 0 }}>
-                    +91 93848 17327
+               +91-7010203031
                   </p>
                 </div>
 

@@ -1,14 +1,14 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdTimer, MdSecurity, MdTrendingUp, MdSavings, MdTrackChanges, MdHandshake } from 'react-icons/md';
 import CTA from './CTA';
 
 export default function TemporaryStaffing() {
   return (
     <div className="temp-staffing">
-      <section className="ts-hero" style={{ background: 'linear-gradient(135deg, var(--blue-dark) 0%, var(--blue-mid) 60%, var(--blue-light) 100%)', color: '#fff', padding: '100px 24px', position: 'relative', overflow: 'hidden' }}>
+      <section className="ts-hero" style={{ background: 'linear-gradient(135deg, var(--gray-900) 0%, var(--blue-dark) 100%)', color: '#fff', padding: '100px 24px', position: 'relative', overflow: 'hidden' }}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <div className="ts-hero-content" style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-            <div style={{ fontSize: '14px', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', opacity: '0.8', marginBottom: '20px' }}>Workforce Solutions</div>
+            <div style={{ fontSize: '14px', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', opacity: '0.8', marginBottom: '20px', color: '#93c5fd' }}>Workforce Solutions</div>
             <h1 style={{ fontSize: '56px', fontWeight: '900', marginBottom: '24px', lineHeight: '1.15' }}>Dynamic Temporary Staffing Solutions</h1>
             <p style={{ fontSize: '20px', opacity: '0.9', marginBottom: '40px', lineHeight: '1.6' }}>Scale your workforce instantly with pre-screened, compliant, and highly skilled professionals ready to deploy within 48 hours.</p>
             <div style={{ display: 'flex', gap: '16px', justifyContent: 'center' }}>
@@ -17,8 +17,8 @@ export default function TemporaryStaffing() {
             </div>
           </div>
         </div>
-        <div style={{ position: 'absolute', bottom: '-150px', right: '-100px', width: '400px', height: '400px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', zIndex: 1 }}></div>
-        <div style={{ position: 'absolute', top: '-100px', left: '-50px', width: '300px', height: '300px', borderRadius: '50%', background: 'rgba(255,255,255,0.05)', zIndex: 1 }}></div>
+        <div style={{ position: 'absolute', top: '10%', right: '-5%', width: '300px', height: '300px', borderRadius: '50%', background: 'rgba(255,255,255,0.03)', zIndex: 1 }}></div>
+        <div style={{ position: 'absolute', bottom: '-20%', left: '-10%', width: '500px', height: '500px', borderRadius: '50%', background: 'rgba(255,255,255,0.04)', zIndex: 1 }}></div>
       </section>
 
       <section className="ts-benefits" style={{ padding: '100px 24px', background: '#fff' }}>
@@ -31,12 +31,12 @@ export default function TemporaryStaffing() {
           
           <div className="ts-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             {[
-              { icon: '⏱️', title: 'Rapid Deployment', desc: 'Get qualified candidates integrated into your team within 24-48 hours.' },
-              { icon: '🛡️', title: '100% Compliant', desc: 'We handle all statutory compliance, PF, ESI, and HR administration.' },
-              { icon: '📈', title: 'Unmatched Flexibility', desc: 'Easily scale your workforce up or down based on seasonal demands.' },
-              { icon: '💸', title: 'Cost Optimization', desc: 'Reduce hiring costs and eliminate permanent payroll burdens.' },
-              { icon: '🎯', title: 'Quality Talent', desc: 'Access to a vast pool of pre-screened and highly skilled professionals.' },
-              { icon: '🤝', title: 'Dedicated Support', desc: '24/7 account management to ensure seamless operations.' }
+              { icon: <MdTimer color="#1a6fd4" />, title: 'Rapid Deployment', desc: 'Get qualified candidates integrated into your team within 24-48 hours.' },
+              { icon: <MdSecurity color="#1a6fd4" />, title: '100% Compliant', desc: 'We handle all statutory compliance, PF, ESI, and HR administration.' },
+              { icon: <MdTrendingUp color="#1a6fd4" />, title: 'Unmatched Flexibility', desc: 'Easily scale your workforce up or down based on seasonal demands.' },
+              { icon: <MdSavings color="#1a6fd4" />, title: 'Cost Optimization', desc: 'Reduce hiring costs and eliminate permanent payroll burdens.' },
+              { icon: <MdTrackChanges color="#1a6fd4" />, title: 'Quality Talent', desc: 'Access to a vast pool of pre-screened and highly skilled professionals.' },
+              { icon: <MdHandshake color="#1a6fd4" />, title: 'Dedicated Support', desc: '24/7 account management to ensure seamless operations.' }
             ].map((benefit, i) => (
               <div key={i} className="service-card" style={{ padding: '40px' }}>
                 <div className="service-icon" style={{ fontSize: '32px', marginBottom: '24px' }}>{benefit.icon}</div>

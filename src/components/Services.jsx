@@ -1,42 +1,42 @@
 import { Link } from 'react-router-dom'
-import { FcConferenceCall, FcBriefcase, FcMindMap, FcMoneyTransfer, FcDepartment, FcGraduationCap } from 'react-icons/fc'
+import { MdGroups, MdWorkOutline, MdHub, MdOutlinePayments, MdDomain, MdSchool } from 'react-icons/md'
 
 const services = [
   {
     id: "temporary-staffing",
     title: "Temporary Staffing",
     description: "Flexible contract staffing solutions with PAN-India sourcing, fast deployment, payroll management, statutory compliance, and tech-enabled HR workflow — designed for seasonal demand and project-based hiring.",
-    icon: <FcConferenceCall />
+    icon: <MdGroups color="#1a6fd4" />
   },
   {
     id: "permanent-recruitment",
     title: "Permanent Recruitment",
     description: "Strategic talent acquisition through Search & Selection, Recruitment Process Outsourcing (RPO), and Vendor-on-Premise models — connecting you with candidates who drive measurable business impact.",
-    icon: <FcBriefcase />
+    icon: <MdWorkOutline color="#1a6fd4" />
   },
   {
     id: "managed-services",
     title: "Managed Workforce Services",
     description: "SLA-driven, end-to-end workforce management that goes beyond deployment — covering training, execution, governance, and performance oversight for complete project confidence.",
-    icon: <FcMindMap />
+    icon: <MdHub color="#1a6fd4" />
   },
   {
     id: "payroll-management",
     title: "Payroll Management",
     description: "Accurate, automated payroll processing with 100% statutory compliance — covering PF, ESI, TDS, and labour law adherence. Reduce administrative burden and eliminate payroll errors for your entire workforce.",
-    icon: <FcMoneyTransfer />
+    icon: <MdOutlinePayments color="#1a6fd4" />
   },
   {
     id: "facility-management",
     title: "Facility Management",
     description: "Cost-effective facility management services including housekeeping, security, maintenance, energy management, pest control, and office space management — keeping your workplace safe and productive.",
-    icon: <FcDepartment />
+    icon: <MdDomain color="#1a6fd4" />
   },
   {
     id: "naps-apprenticeship",
     title: "Apprenticeship Programs (NAPS)",
     description: "Implement the National Apprenticeship Promotion Scheme (NAPS) to build a pipeline of entry-level talent — cost-efficient hiring with structured learning, government subsidies, and minimal compliance risk.",
-    icon: <FcGraduationCap />
+    icon: <MdSchool color="#1a6fd4" />
   }
 ];
 

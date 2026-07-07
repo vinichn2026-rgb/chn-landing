@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdManageSearch, MdTrackChanges, MdRocketLaunch, MdAnalytics, MdHandshake, MdVerifiedUser } from 'react-icons/md';
 import CTA from './CTA';
 
 export default function PermanentRecruitment() {
@@ -31,12 +31,12 @@ export default function PermanentRecruitment() {
           
           <div className="pr-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             {[
-              { icon: '🔍', title: 'Executive Search', desc: 'Targeted headhunting for leadership and niche roles that drive strategic growth.' },
-              { icon: '🎯', title: 'Cultural Alignment', desc: 'Rigorous assessment to ensure candidates align perfectly with your company values.' },
-              { icon: '🚀', title: 'RPO Solutions', desc: 'Outsource your entire recruitment process to our experts for maximum efficiency.' },
-              { icon: '📊', title: 'Data-Driven Sourcing', desc: 'Utilizing advanced analytics and market intelligence to locate passive candidates.' },
-              { icon: '🤝', title: 'Candidate Experience', desc: 'Ensuring a seamless, professional journey for candidates to protect your employer brand.' },
-              { icon: '🛡️', title: 'Placement Guarantee', desc: 'Risk-free hiring with our standard replacement guarantees on all permanent placements.' }
+              { icon: <MdManageSearch color="#1a6fd4" />, title: 'Executive Search', desc: 'Targeted headhunting for leadership and niche roles that drive strategic growth.' },
+              { icon: <MdTrackChanges color="#1a6fd4" />, title: 'Cultural Alignment', desc: 'Rigorous assessment to ensure candidates align perfectly with your company values.' },
+              { icon: <MdRocketLaunch color="#1a6fd4" />, title: 'RPO Solutions', desc: 'Outsource your entire recruitment process to our experts for maximum efficiency.' },
+              { icon: <MdAnalytics color="#1a6fd4" />, title: 'Data-Driven Sourcing', desc: 'Utilizing advanced analytics and market intelligence to locate passive candidates.' },
+              { icon: <MdHandshake color="#1a6fd4" />, title: 'Candidate Experience', desc: 'Ensuring a seamless, professional journey for candidates to protect your employer brand.' },
+              { icon: <MdVerifiedUser color="#1a6fd4" />, title: 'Placement Guarantee', desc: 'Risk-free hiring with our standard replacement guarantees on all permanent placements.' }
             ].map((benefit, i) => (
               <div key={i} className="service-card" style={{ padding: '40px' }}>
                 <div className="service-icon" style={{ fontSize: '32px', marginBottom: '24px' }}>{benefit.icon}</div>

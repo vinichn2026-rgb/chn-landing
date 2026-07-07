@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdPayments, MdSchool, MdTrendingDown, MdBalance, MdEco, MdHandshake } from 'react-icons/md';
 import CTA from './CTA';
 
 export default function NapsApprenticeship() {
@@ -31,12 +31,12 @@ export default function NapsApprenticeship() {
           
           <div className="naps-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             {[
-              { icon: '💰', title: 'Financial Subsidies', desc: 'Reimbursement of 25% of prescribed stipend up to ₹1500 per month per apprentice by the Government.' },
-              { icon: '🎓', title: 'Skill Development', desc: 'Transform raw talent into highly productive employees trained specifically on your company equipment and culture.' },
-              { icon: '📉', title: 'Reduced Hiring Costs', desc: 'Lower attrition rates and recruitment costs by building a dedicated, loyal pipeline of entry-level talent.' },
-              { icon: '⚖️', title: 'Compliance Simplified', desc: 'Exemption from PF and ESI contributions for apprentices, reducing overall statutory burden.' },
-              { icon: '🌱', title: 'CSR Contribution', desc: 'Fulfill corporate social responsibility by contributing to national skill development and youth employability.' },
-              { icon: '🤝', title: 'End-to-End Support', desc: 'We handle portal registration, candidate sourcing, documentation, and claim processing.' }
+              { icon: <MdPayments color="#1a6fd4" />, title: 'Financial Subsidies', desc: 'Reimbursement of 25% of prescribed stipend up to ₹1500 per month per apprentice by the Government.' },
+              { icon: <MdSchool color="#1a6fd4" />, title: 'Skill Development', desc: 'Transform raw talent into highly productive employees trained specifically on your company equipment and culture.' },
+              { icon: <MdTrendingDown color="#1a6fd4" />, title: 'Reduced Hiring Costs', desc: 'Lower attrition rates and recruitment costs by building a dedicated, loyal pipeline of entry-level talent.' },
+              { icon: <MdBalance color="#1a6fd4" />, title: 'Compliance Simplified', desc: 'Exemption from PF and ESI contributions for apprentices, reducing overall statutory burden.' },
+              { icon: <MdEco color="#1a6fd4" />, title: 'CSR Contribution', desc: 'Fulfill corporate social responsibility by contributing to national skill development and youth employability.' },
+              { icon: <MdHandshake color="#1a6fd4" />, title: 'End-to-End Support', desc: 'We handle portal registration, candidate sourcing, documentation, and claim processing.' }
             ].map((feature, i) => (
               <div key={i} className="service-card" style={{ padding: '40px' }}>
                 <div className="service-icon" style={{ fontSize: '32px', marginBottom: '24px' }}>{feature.icon}</div>

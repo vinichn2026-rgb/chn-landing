@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdTrendingUp, MdSupervisorAccount, MdSchool, MdSecurity, MdTrendingDown, MdAnalytics } from 'react-icons/md';
 import CTA from './CTA';
 
 export default function ManagedServices() {
@@ -31,12 +31,12 @@ export default function ManagedServices() {
           
           <div className="ms-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             {[
-              { icon: '📈', title: 'SLA-Driven Performance', desc: 'Guaranteed output and productivity metrics tied directly to service level agreements.' },
-              { icon: '👨‍💼', title: 'On-Site Management', desc: 'Dedicated supervisors and SPOCs deployed at your facility to manage daily operations.' },
-              { icon: '🎓', title: 'Training & Skilling', desc: 'Continuous on-the-job training to ensure the workforce meets your quality standards.' },
-              { icon: '🛡️', title: 'Risk Mitigation', desc: 'Complete transfer of compliance, safety, and operational risks to our expert team.' },
-              { icon: '📉', title: 'Cost Optimization', desc: 'Reduce your total cost of workforce ownership through efficiency and scale.' },
-              { icon: '📊', title: 'Data Analytics', desc: 'Real-time dashboards providing full visibility into attendance, attrition, and output.' }
+              { icon: <MdTrendingUp color="#1a6fd4" />, title: 'SLA-Driven Performance', desc: 'Guaranteed output and productivity metrics tied directly to service level agreements.' },
+              { icon: <MdSupervisorAccount color="#1a6fd4" />, title: 'On-Site Management', desc: 'Dedicated supervisors and SPOCs deployed at your facility to manage daily operations.' },
+              { icon: <MdSchool color="#1a6fd4" />, title: 'Training & Skilling', desc: 'Continuous on-the-job training to ensure the workforce meets your quality standards.' },
+              { icon: <MdSecurity color="#1a6fd4" />, title: 'Risk Mitigation', desc: 'Complete transfer of compliance, safety, and operational risks to our expert team.' },
+              { icon: <MdTrendingDown color="#1a6fd4" />, title: 'Cost Optimization', desc: 'Reduce your total cost of workforce ownership through efficiency and scale.' },
+              { icon: <MdAnalytics color="#1a6fd4" />, title: 'Data Analytics', desc: 'Real-time dashboards providing full visibility into attendance, attrition, and output.' }
             ].map((feature, i) => (
               <div key={i} className="service-card" style={{ padding: '40px' }}>
                 <div className="service-icon" style={{ fontSize: '32px', marginBottom: '24px' }}>{feature.icon}</div>

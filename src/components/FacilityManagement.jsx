@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdCleaningServices, MdSecurity, MdHandyman, MdPark, MdPestControl, MdCorporateFare } from 'react-icons/md';
 import CTA from './CTA';
 
 export default function FacilityManagement() {
@@ -31,12 +31,12 @@ export default function FacilityManagement() {
           
           <div className="fm-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             {[
-              { icon: '✨', title: 'Housekeeping & Janitorial', desc: 'Industry-standard cleaning, sanitation, and hygiene services tailored to your premises.' },
-              { icon: '🛡️', title: 'Security Services', desc: 'Trained personnel, access control, and 24/7 surveillance to keep your assets secure.' },
-              { icon: '🔧', title: 'Technical Maintenance', desc: 'Preventative and reactive maintenance for HVAC, plumbing, and electrical systems.' },
-              { icon: '🌿', title: 'Landscaping & Horticulture', desc: 'Professional groundskeeping to maintain the aesthetic appeal of your exterior spaces.' },
-              { icon: '🐜', title: 'Pest Control', desc: 'Safe, compliant, and highly effective pest management programs for commercial spaces.' },
-              { icon: '🏢', title: 'Space Management', desc: 'Optimizing workspace utilization, cafeteria management, and front desk operations.' }
+              { icon: <MdCleaningServices color="#1a6fd4" />, title: 'Housekeeping & Janitorial', desc: 'Industry-standard cleaning, sanitation, and hygiene services tailored to your premises.' },
+              { icon: <MdSecurity color="#1a6fd4" />, title: 'Security Services', desc: 'Trained personnel, access control, and 24/7 surveillance to keep your assets secure.' },
+              { icon: <MdHandyman color="#1a6fd4" />, title: 'Technical Maintenance', desc: 'Preventative and reactive maintenance for HVAC, plumbing, and electrical systems.' },
+              { icon: <MdPark color="#1a6fd4" />, title: 'Landscaping & Horticulture', desc: 'Professional groundskeeping to maintain the aesthetic appeal of your exterior spaces.' },
+              { icon: <MdPestControl color="#1a6fd4" />, title: 'Pest Control', desc: 'Safe, compliant, and highly effective pest management programs for commercial spaces.' },
+              { icon: <MdCorporateFare color="#1a6fd4" />, title: 'Space Management', desc: 'Optimizing workspace utilization, cafeteria management, and front desk operations.' }
             ].map((feature, i) => (
               <div key={i} className="service-card" style={{ padding: '40px' }}>
                 <div className="service-icon" style={{ fontSize: '32px', marginBottom: '24px' }}>{feature.icon}</div>

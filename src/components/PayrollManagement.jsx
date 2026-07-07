@@ -1,5 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { MdPayments, MdFactCheck, MdReceipt, MdComputer, MdAnalytics, MdLock } from 'react-icons/md';
 import CTA from './CTA';
 
 export default function PayrollManagement() {
@@ -31,12 +31,12 @@ export default function PayrollManagement() {
           
           <div className="pm-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
             {[
-              { icon: '💰', title: 'Accurate Processing', desc: 'Timely and error-free salary disbursement tailored to your organizational structure.' },
-              { icon: '📜', title: '100% Compliance', desc: 'Expert handling of PF, ESI, PT, and LWF across multiple states and jurisdictions.' },
-              { icon: '🧾', title: 'Tax Management', desc: 'Accurate TDS calculations, deductions, and timely filing of returns.' },
-              { icon: '💻', title: 'Digital Payslips', desc: 'Secure, automated distribution of payslips and tax sheets to all employees.' },
-              { icon: '📊', title: 'Advanced Reporting', desc: 'Customized MIS reports and analytics for better financial forecasting.' },
-              { icon: '🔐', title: 'Data Security', desc: 'Bank-grade security protocols to protect sensitive employee and financial information.' }
+              { icon: <MdPayments color="#1a6fd4" />, title: 'Accurate Processing', desc: 'Timely and error-free salary disbursement tailored to your organizational structure.' },
+              { icon: <MdFactCheck color="#1a6fd4" />, title: '100% Compliance', desc: 'Expert handling of PF, ESI, PT, and LWF across multiple states and jurisdictions.' },
+              { icon: <MdReceipt color="#1a6fd4" />, title: 'Tax Management', desc: 'Accurate TDS calculations, deductions, and timely filing of returns.' },
+              { icon: <MdComputer color="#1a6fd4" />, title: 'Digital Payslips', desc: 'Secure, automated distribution of payslips and tax sheets to all employees.' },
+              { icon: <MdAnalytics color="#1a6fd4" />, title: 'Advanced Reporting', desc: 'Customized MIS reports and analytics for better financial forecasting.' },
+              { icon: <MdLock color="#1a6fd4" />, title: 'Data Security', desc: 'Bank-grade security protocols to protect sensitive employee and financial information.' }
             ].map((feature, i) => (
               <div key={i} className="service-card" style={{ padding: '40px' }}>
                 <div className="service-icon" style={{ fontSize: '32px', marginBottom: '24px' }}>{feature.icon}</div>

@@ -1,17 +1,33 @@
+import { 
+  MdFactory, 
+  MdAccountBalance, 
+  MdComputer, 
+  MdLocalHospital, 
+  MdLocalShipping, 
+  MdShoppingCart, 
+  MdCellTower, 
+  MdConstruction, 
+  MdSchool, 
+  MdLocationCity, 
+  MdElectricBolt, 
+  MdAgriculture 
+} from 'react-icons/md';
+
 export default function Industries() {
+  const iconColor = "#1a6fd4";
   const industries = [
-    { icon: "🏭", name: "Manufacturing" },
-    { icon: "🏦", name: "BFSI" },
-    { icon: "💻", name: "Technology & IT" },
-    { icon: "🏥", name: "Healthcare" },
-    { icon: "📦", name: "SCM & Logistics" },
-    { icon: "🛒", name: "Ecommerce & Retail" },
-    { icon: "📡", name: "Telecom" },
-    { icon: "🏗️", name: "Infrastructure" },
-    { icon: "🏫", name: "Education" },
-    { icon: "🏢", name: "Construction" },
-    { icon: "⚡", name: "Energy & Utilities" },
-    { icon: "🌾", name: "Agriculture" }
+    { icon: <MdFactory color={iconColor} />, name: "Manufacturing" },
+    { icon: <MdAccountBalance color={iconColor} />, name: "BFSI" },
+    { icon: <MdComputer color={iconColor} />, name: "Technology & IT" },
+    { icon: <MdLocalHospital color={iconColor} />, name: "Healthcare" },
+    { icon: <MdLocalShipping color={iconColor} />, name: "SCM & Logistics" },
+    { icon: <MdShoppingCart color={iconColor} />, name: "Ecommerce & Retail" },
+    { icon: <MdCellTower color={iconColor} />, name: "Telecom" },
+    { icon: <MdConstruction color={iconColor} />, name: "Infrastructure" },
+    { icon: <MdSchool color={iconColor} />, name: "Education" },
+    { icon: <MdLocationCity color={iconColor} />, name: "Construction" },
+    { icon: <MdElectricBolt color={iconColor} />, name: "Energy & Utilities" },
+    { icon: <MdAgriculture color={iconColor} />, name: "Agriculture" }
   ];
 
   return (
